@@ -1,0 +1,73 @@
+li a0,0x00684F48
+li a0,0x00684F48
+lw a0,-0x4904(gp)
+lw a0,0x254(a0)
+lw a0,0x30(a0)
+lw a0,0xA4(a0)
+
+unit checking, load word into v0 from a0 + 0x148 (a0 here equals 014bb750)unit loc 14B B898
+
+lw a0,(v1) (get the unit pointer)
+v1 is 14bb9a4
+v0 14b0320
+
+z_un_0029ae40 battle loop?
+
+0069F210
+
+0069AEA0
+b 0x0069AEA0
+
+
+sd ra,0x80(sp)
+
+sq s0,(sp)
+
+196ca80
+
+S3 is now base unit number
+addiu a2,t0,0x284 0x284
+
+1659164
+
+8C820148
+
+lw s5,0x148(s3)
+
+01658EE0
+
+addiu s4,0x284(s3)
+
+addiu a2,t0,0x284
+lw v0,0x148(a0)
+
+for protag if we have the right value it should equal 196ca80
+19658ee0
+1659134
+
+addiu s4, 1658ee0, 0x254
+
+lw a2,0x0(s4)
+
+00202054
+lw s4,0x254(s1)
+lw s3,0x148(s1)
+
+002020d0
+beq s3,s4,0x0020211C
+
+002A46F8 camera stuff
+
+003B5438 rip world
+
+001A0A24
+
+00280DD8
+
+00194134
+
+00198468
+
+0028AA4C fight intro logic ish?
+
+002FD318

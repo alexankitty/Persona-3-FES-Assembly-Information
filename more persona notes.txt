@@ -1,0 +1,23 @@
+0017E680 - runs once a frame and draws things??
+00184044 more things
+
+0019AB80 - lighting functions
+0019ACC8 - character shadow size
+0019AD0C - shadow position
+0019AD34 - Shadow Lightness
+
+00183BE0 Date Function
+00183EE4 - Vertical day position
+00183C94 - Vertical date position
+00183CB4 - Month left position
+00183CF0 - Date Slash left position
+
+0019C820 - cut off point
+
+//Full shadow fix (Alexankitty)
+patch=1,EE,0019C7BC,word,3C023F70 // This darkens the shadows and allows more of it to be displayed.
+
+001C6200 speech functions?
+001C6308 speech bubble
+
+10199 continue point

@@ -1,0 +1,107 @@
+001059B0 runs every frame (but why?)
+001058A0 runs every frame
+001053F0 runs every frame
+00104710 runs every frame
+
+00434980 maybe left?
+001ABD20 entities function
+001ADFF0 player turning
+0032C340 enemy movement? aggro code
+00346530 runs every frame with some part executing seemingly randomly
+0034D150 runs when enemies are near.
+0033089C triggers when despawn
+001C4364 runs on floor change
+00431238 runs on floor change
+0042FE54 runs on floor change and camp exit
+00431238 runs on floor change
+004376BC reaper related?
+00463FAC runs every frame
+00471BE0 runs every 1/8 frame
+004A18D0 runs almost every frame, doesn't run on boss floors.
+004A187C enemy related?
+004C8D0C runs every frame
+004D78B0 runs multiple times a frame. Monster if section
+004EEFEC executes multiple time a frame
+
+00112B94 break map? 84420000
+00112FB4 addiu t2,v0,0x101 (244A0101) disable drawing of map background.
+001125D0 map func?
+004D7090 map draw size left
+001127D0 Rendering parent function
+004D7F60 might can be important? rendering stuff!
+004D8114 particle effect things?
+
+001A8164
+
+004D78B0 map draw size memory
+
+004D8F40more map stuff?
+004D6B90
+
+7e09c0 controller. (there are like 4 different values here.)
+
+01FFFA40 drawing functions? (+ 100 gets added, memory gets stored to from 08 and 18 and 10 )
+
+00112FB4 jump before here and add additional instructions
+
+007D6920 temporary area for custom shenanigans.
+
+00112FB8 return here
+
+addu v0,sp
+addiu t2,v0,0x100
+lwc1 f00,0x2C(s1)
+sub.s f00,f01,f00
+
+bne v0, v1, 0x
+li a0,0x00684F48
+
+3C0A001f
+2484fA40
+
+3C0A001F
+254AFA40
+
+unused memory 7d69b0
+
+j 007D691c
+
+
+for finding rendered elements
+
+lui t9,0x007d
+addiu t9,t9,0x69b0
+lw t9,(t9)
+sll t2,t6,0x06
+addu v0,sp
+addu t2,sp
+bne t2,t9,0x007D6948
+nop
+addiu t2,v0,0x101
+j 0x007D6950
+nop
+nop
+addiu t2,v0,0x100
+lwc1 f00,0x2C(s1)
+sub.s f00,f01,f00
+j 0x00112FB8
+
+for finding other things.
+
+
+
+j 007D691c
+
+lui s7,0x007d
+addiu s7,s7,0x69b0
+lw s7,(s7)
+bne s7,t0,0x007d6940
+nop
+addiu v0,zero,-0x3
+b 0x007D693C
+
+addiu v0,zero,-0x2
+ld a2,-0x42C0(gp)
+dsll32 a1,v0,0x00
+dmove s7, zero
+j 004D7094

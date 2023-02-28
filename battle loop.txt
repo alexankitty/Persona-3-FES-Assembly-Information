@@ -1,0 +1,43 @@
+00195460 battle render?
+001984C0 battle render stuff
+0027CC30 main battle loop
+
+0027F18C runs on mc movement?
+002DCC4C runs on skill
+002DCCB8 runs on attack
+
+0027CCAC do nothing
+0027CC9C do nothing
+0027CC50 do nothing
+
+
+002DCC54 runs on skill effect
+002DCCB4 runs on enemy turn
+0029A0E0 runs on battle completion
+002A3224 runs at turn change
+
+
+0027CC94 movement function?
+00280DE4 runs at start of turn, runs on character movement
+
+
+002D1B20 branch for between turns
+
+0029AE7C start of turn things
+
+
+0029AFD0 MC Value
+0029AFE0 Party Value
+0029AFF0 Enemy Value
+
+0028B99C something of significance happens here
+
+00299D60 takes control number as an argument, does some math magic to spit out a function to go to
+
+0028BD10 MC Path
+
+0028CDA0 AI Path
+
+// return immediatly upon entering battle_panel_draw
+patch=1,EE,001fdac0,word,03e00008 // jr ra
+patch=1,EE,001fdac4,word,00000000 // nop
