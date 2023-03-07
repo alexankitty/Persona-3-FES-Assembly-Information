@@ -1,0 +1,13 @@
+00684e5d
+
+00524388 tactics function
+
+00206170 list display (4)
+
+The list locations are dynamic at S0+0x400
+
+019e7a60 list limit
+
+019e7a64 list length
+
+everything else has a position identifier

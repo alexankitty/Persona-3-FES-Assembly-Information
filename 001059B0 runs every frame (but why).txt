@@ -6,6 +6,8 @@
 00434980 maybe left?
 001ABD20 entities function
 001ADFF0 player turning
+004C3214 controls player height
+001AF32C affects move speed and other weirdness...
 0032C340 enemy movement? aggro code
 00346530 runs every frame with some part executing seemingly randomly
 0034D150 runs when enemies are near.
@@ -105,3 +107,38 @@ ld a2,-0x42C0(gp)
 dsll32 a1,v0,0x00
 dmove s7, zero
 j 004D7094
+
+Party Panel 131bf90
+map background 01393f20
+party dots 1394240
+stairs icon 1393fe0 13940c0
+
+UI Element Region is from 1391FD0 to 1349590
+
+More in the 130dff0 range (party panel bars)
+
+1304f40 party panel area
+1395c40 area label
+0131BF40 party panel two
+014171d0 date display area
+01394f05 teleporter icon 1394140
+
+0042C0A4 stepped out from render function for party dot
+0042C200 instruction for party member offset.
+004281F4 stepped out from party member offset above
+
+00112754 function that reads stair icon. (only reads while on screen!)
+read again here 11296c 112c1c 1130a0
+00430060 function return here.
+returns to 00193EC0
+returns to 00194100
+returns to 00194A68
+returns to 0010BF70
+
+0011296C reads teleporter icon
+00112C1C read again
+001130A0 read again
+
+00112754
+returns to 004300CC
+somehow we end up here?
