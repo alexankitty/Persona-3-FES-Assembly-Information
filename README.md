@@ -1,5 +1,6 @@
 # Persona-3-FES-Assembly-Information
 This repository will contain every part of my research of Persona 3 FES' assembly/machine code/elf. There can and will be inaccuracies. This will be a mess.
+Decompiled scripts will also be included in here as well.
 
 # Contributing
 Open a PR with some notes to add and I'll add them. Or if you want to help me organize fee lfree.
