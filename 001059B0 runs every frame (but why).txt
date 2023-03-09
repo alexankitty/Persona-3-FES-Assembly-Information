@@ -108,10 +108,13 @@ dsll32 a1,v0,0x00
 dmove s7, zero
 j 004D7094
 
+
+These values are all dynamic in memory, so this is just a rough estimate of where to find them.
 Party Panel 131bf90
 map background 01393f20
 party dots 1394240
 stairs icon 1393fe0 13940c0
+1961f08 floor text
 
 UI Element Region is from 1391FD0 to 1349590
 
