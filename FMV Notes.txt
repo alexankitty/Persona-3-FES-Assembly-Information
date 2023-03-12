@@ -1,0 +1,86 @@
+FMV Area is the S3 register (Around 013103A0 in memory, but it does fluctuate a bit)
+Here's some offsets for what they do
+FMV Instructions 0010afd0
+
+0xE4  : FMV Y top left (normally zero)
+0x124 : FMV Y bottom left (f20 normally 448, game's Y resolution)
+0x164 : FMV Y top right (normally zero)
+0x1a4 : FMV Y bottom right (f20 normally 448, game's Y resolution)
+
+0xE0  : FMV X Top Left (normally zero)
+0x120 : FMV X Bottom Left (normally zero)
+0x160 : FMV X Top Right (f21 normally 640, games X resolution)
+0x1A0 : FMV X Bot Right (f21 normally 640, games X resolution)
+
+j 00698ec8
+lui v0,0x4400
+sw v0,0x161(s3)
+sw v0,0x1a1(s3)
+sw zero,0xE4(s3)
+lh v1,(v0)
+li v0,0x5
+j 0010afcc
+bne v1,v0,0x0010aff8
+nop
+lui v0,0x4250
+lui s4,0x1540
+lui s5,0x0000
+lui s6,0x0000
+b 0000005
+nop
+lui v0,0x4250
+lui s4,0x1540
+lui s5,0x0000
+lui s6,0x0000
+nop
+sw v0,0xe4(s3)
+sw v0,0x124(s3)
+sw s4,0x164(s3)
+sw s4,0x1a4(s3)
+sw s5,0xe0(s3)
+sw s5,0x160(s3)
+sw s6,0x120(s3)
+sw s6,0x1a0(s3)
+dmove s4,zero
+dmove s5,zero
+dmove s6,zero
+
+
+lui v0,0x4400
+sw v0,0x161(s3)
+sw v0,0x1a1(s3)
+sw zero,0xE4(s3)
+lui v0,0xcb0c1
+sw v0,0x166(s3)
+lh v1,(v0)
+li v0,0x5
+j 0010afcc
+
+
+j 00698ec8
+nop
+bne v1,v0,0x0010aff8
+nop
+lui v0,0x4250
+sw v0,0xE0(s3)
+sw v0,0x120(s3)
+lui v0,0x2000
+sw v0,0x15f(s3)
+sw v0,0x19f(s3)
+b 0010b018
+nop
+lui v0,0x4250
+sw v0,0xE0(s3)
+sw v0,0x120(s3)
+lui v0,0x2000
+sw v0,0x15f(s3)
+sw v0,0x19f(s3)
+lui v0,0xc1a8
+sw v0,0xE4(s3)
+
+c2
+
+
+addu v0,v1
+lui v0,0x005d
+addiu v0,v0,0x4B70
