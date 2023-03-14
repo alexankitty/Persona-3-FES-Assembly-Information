@@ -1,0 +1,9 @@
+p3ct002_0.sfd
+p3ct008.sfd
+p3ct019_01.sfd
+p3ct022_01.sfd // technically cropped but can't be uncropped because of the photograph at the end.
+p3ct022_02.sfd // same as above
+p3ct029.sfd
+p3ct030_01.sfd
+p3ct030_02.sfd
+p3fct006.sfd

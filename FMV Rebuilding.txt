@@ -1,0 +1,44 @@
+C:\ffmpeg\bin\ffmpeg.exe -i P3CT002_00.SFD -vcodec mpeg1video -vf "nnedi=weights=nnedi3_weights.bin:field=tf" -b:v 104857K -maxrate 104857K -minrate 104857K -bufsize 104857K -s 640x448 -an P3CT002_00.m1v
+C:\ffmpeg\bin\ffmpeg.exe -i P3CT008.SFD -vcodec mpeg1video -vf "nnedi=weights=nnedi3_weights.bin" -b:v 104857K -maxrate 104857K -minrate 104857K -bufsize 4511k -s 640x448 -an P3CT008.m1v
+C:\ffmpeg\bin\ffmpeg.exe -i P3CT019_01.SFD -vcodec mpeg1video -vf "nnedi=weights=nnedi3_weights.bin" -b:v 104857K -maxrate 104857K -minrate 104857K -bufsize 104857K -s 640x448 -an P3CT019_01.m1v
+C:\ffmpeg\bin\ffmpeg.exe -i P3CT029.SFD -vcodec mpeg1video -vf "nnedi=weights=nnedi3_weights.bin" -b:v 104857K -maxrate 104857K -minrate 104857K -bufsize 104857K -s 640x448 -an P3CT029.m1v
+C:\ffmpeg\bin\ffmpeg.exe -i P3CT030_01.SFD -vcodec mpeg1video -vf "nnedi=weights=nnedi3_weights.bin" -b:v 104857K -maxrate 104857K -minrate 104857K -bufsize 104857K -s 640x448 -an P3CT030_01.m1v
+C:\ffmpeg\bin\ffmpeg.exe -i P3CT030_02.SFD -vcodec mpeg1video -vf "nnedi=weights=nnedi3_weights.bin" -b:v 104857K -maxrate 104857K -minrate 104857K -bufsize 104857K -s 640x448 -an P3CT030_02.m1v
+C:\ffmpeg\bin\ffmpeg.exe -i P3FCT006.SFD -vcodec mpeg1video -vf "nnedi=weights=nnedi3_weights.bin" -b:v 104857K -maxrate 104857K -minrate 104857K -bufsize 104857K -s 640x448 -an P3FCT006.m1v
+C:\ffmpeg\bin\ffmpeg.exe -i P3CT003.SFD -vcodec mpeg1video -vf "nnedi=weights=nnedi3_weights.bin" -b:v 4565K -maxrate 4565K -minrate 4565K -bufsize 4565K -s 640x448 -an P3CT003.m1v
+
+
+
+ffmpeg -i P3CT002_00.SFD -map 0:0 P3CT002_00.adx
+ffmpeg -i P3CT008.SFD -map 0:0 3CT008.adx
+ffmpeg -i P3CT029.SFD -map 0:0 P3CT029.SFD.adx
+ffmpeg -i P3CT019_01.SFD -map 0:0 P3CT019_01.adx
+ffmpeg -i P3CT030_01.SFD -map 0:0 P3CT030_01.adx
+ffmpeg -i P3CT030_02.SFD -map 0:0 P3CT030_02.adx
+ffmpeg -i P3FCT006.SFD -map 0:0 P3FCT006.adx
+
+C:\ffmpeg\bin\ffmpeg.exe -i P3CT002_00.mp4
+C:\ffmpeg\bin\ffmpeg.exe -i P3CT008.mp4
+C:\ffmpeg\bin\ffmpeg.exe -i P3CT029.mp4 
+C:\ffmpeg\bin\ffmpeg.exe -i P3CT030_01.mp4
+C:\ffmpeg\bin\ffmpeg.exe -i P3CT030_02.mp4
+C:\ffmpeg\bin\ffmpeg.exe -i P3FCT006.mp4
+C:\ffmpeg\bin\ffmpeg.exe -i P3CT019_01.mp4
+
+-vf "nnedi=weights=nnedi3_weights.bin" -c:v libx264 -preset slow -crf 19
+
+C:\ffmpeg\bin\ffmpeg.exe -i P3CT002_00.mp4 -vcodec mpeg1video -b:v 4778K -maxrate 4778K -minrate 4778K P3CT002_00.m1v 
+C:\ffmpeg\bin\ffmpeg.exe -i P3CT008.mp4 -vcodec mpeg1video -b:v 14953K -maxrate 14953K -minrate 14953K P3CT008.m1v 
+C:\ffmpeg\bin\ffmpeg.exe -i P3CT029.mp4 -vcodec mpeg1video -b:v 14166K -maxrate 14166K -minrate 14166K P3CT029.m1v 
+C:\ffmpeg\bin\ffmpeg.exe -i P3CT030_01.mp4 -vcodec mpeg1video -b:v 13542K -maxrate 13542K -minrate 13542K P3CT030_01.m1v 
+C:\ffmpeg\bin\ffmpeg.exe -i P3CT030_02.mp4 -vcodec mpeg1video -b:v 8834K -maxrate 8834K -minrate 1191K P3CT030_02.m1v 
+C:\ffmpeg\bin\ffmpeg.exe -i P3FCT006.mp4 -vcodec mpeg1video -b:v 14643K -maxrate 14643K -minrate 14643K P3FCT006.m1v 
+C:\ffmpeg\bin\ffmpeg.exe -i P3CT019_01.mp4 -vcodec mpeg1video -b:v 18700K -maxrate 18700K -minrate 18700K P3CT019_01.m1v 
+
+.\SFD_Muxer.exe -v .\P3CT002_00.M1V -o P3CT002_00.SFD -a .\P3CT002_00.sfa
+.\SFD_Muxer.exe -v .\P3CT008.M1V -o P3CT008.SFD -a .\P3CT008.sfa
+.\SFD_Muxer.exe -v .\P3CT029.M1V -o P3CT029.SFD -a .\P3CT029.sfa
+.\SFD_Muxer.exe -v .\P3CT030_01.M1V -o P3CT030_01.SFD -a .\P3CT030_01.sfa
+.\SFD_Muxer.exe -v .\P3CT030_02.M1V -o P3CT030_02.SFD -a .\P3CT030_02.sfa
+.\SFD_Muxer.exe -v .\P3FCT006.M1V -o P3FCT006.SFD -a .\P3FCT006.sfa
+.\SFD_Muxer.exe -v .\P3CT019_01.M1V -o P3CT019_01.SFD -a .\P3CT019_01.sfa

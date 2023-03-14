@@ -1,0 +1,601 @@
+==================================================
+//Shin Megami Tensei Persona 3/FES Skills Digits//
+==================================================
+
+Note* All of these skills are tested on "The Journey" and I have written their description to match it.
+I still haven't tested them on "The Answer" and thus they are subject to change, 
+because "The Journey" and "The Answer" have different address memory, 
+so skills that do not work on TJ will work for TA and vice versa.
+
+================
+//MagiC Skills//
+================
+001 Agi
+002 Agilao
+003 Agidyne
+004 Maragi
+005 Maragion
+006 Maragidyne
+007 Maralagidyne (same as Maragidyne only with green flames)
+008 0x008 (useless skill)
+009 Ragnarok
+00A 0x00A (useless skill)
+00B Garu
+00C Garula
+00D Garudyne
+00E Magarula
+00F Magarudyne
+010 0x010 (useless skill)
+011 0x011 (useless skill)
+012 Panta Rhei
+013 Bufu
+014 Bufula
+015 Bufudyne
+016 Mabufu
+017 Mabufula
+018 Mabufudyne
+019 0x019 (useless skill)
+01A 0x01A (useless skill)
+01B Niflheim
+01C Zio
+01D Zionga
+01E Ziodyne
+01F Mazio
+020 Mazionga
+021 Maziodyne
+022 0x22 (useless skill)
+023 0x23 (useless skill)
+024 Thunder Reign
+025 Megido
+026 Megidola
+027 Megidolaon
+028 Last Resort
+029 0x029 (useless skill)
+02A 0x02A (useless skill)
+02B Black Viper
+02C Morning Star
+02D Hama
+02E Mahama
+02F Hamaon
+030 Mahamaon
+031 0x031 (useless skill)
+032 Samsara
+033 Mudo
+034 Mamudo
+035 Mudoon
+036 Mamudoon
+037 0x037 (useless skill)
+038 Die for Me!
+039 Marin Karin
+03A Sexy Dance
+03B Bewilder
+03C Earie Sound
+03D Pulinpa
+03E Tentarafoo
+03F Evil Touch
+040 Evil Smile
+041 Ghastly Wail
+042 Provoke
+043 Infuriate
+044 Poisma
+045 Poison Mist
+046 Virus Breath
+047 0x047 (useless skill)
+048 0x048 (useless skill)
+049 Foul Breath
+04A Stagnant Air
+04B Life Drain
+04C Spirit Drain
+04D 0x04D (useless skill)
+04E 0x04E (useless skill)
+04F 0x04F (useless skill)
+050 Maragidyne (Elizabeth's modded spell)
+051 Magarudyne (Elizabeth's modded spell)
+052 Mabufudyne (Elizabeth's modded spell)
+053 Maziodyne (Elizabeth's modded spell)
+054 Megidolaon (Elizabeth's Megidolaon - 9999 damage to all foes)
+055 Mahamaon
+056 Mamudoon
+057 Sexy Dance
+058 Earie Sound
+059 Tentarafoo
+05A Evil Smile
+05B Poison Mist
+05C Holy Arrow
+05D LIfe Drain
+05E Spirit Drain
+05F 0x05F (Last Resort - damages both the party and enemies)
+060 Death ("The Journey" Final/Last Boss's Ultimate Spell - 9999 damage to a single foe)
+061 Yell (Fully restores Minato's HP)
+062 Yell (Fully restores Minato's HP)
+063 Death (Always 9999 damage+Critical Hit every time)
+064 Death (Almighty attack that always misses...no comment -_-')
+065 Death (useless skill)
+066 Moonless Gown (useless skill)
+067 Moonless Gown (useless skill)
+068 Summon (useless skill)
+069 Slash Attack (useless skill)
+06A Pierce Attack (useless skill)
+06B Strike Attack (useless skill)
+06C Yell (Fully restores Minato's HP)
+06D Pierce Attack (useless skill)
+06E Fire Attack (useless skill)
+06F Almighty Attack (like normal attack but it attacks all and has almighty properties+a really nice blue wave graphic effect)
+
+===================
+//Physical Skills//
+===================
+
+070 Bash
+071 Assault Dive
+072 Kill Rush
+073 Swift Strike
+074 Sonic Punch
+075 Heat Wave
+076 Gigantic Fist
+077 Akasha Arts
+078 God's Hand
+079 Cleave
+07A Fatal End
+07B Getsu-ei
+07C Zan-ei
+07D Mighty Swing
+07E Double fangs
+07F Blade of Fury
+080 Deathbound
+081 Tempest Slash
+082 Heaven's Blade
+083 Pralaya
+084 Power Slash
+085 Gale Slash
+086 Brave Blade
+087 Herculean Strike
+088 Vicious Strike
+089 Single Shot
+08A Twin Shot
+08B Holy Arrow
+08C Torrent Shot
+08D Arrow Rain
+08E Myriad Arrows
+08F Primal Force
+090 Vorpal Blade
+091 Weary Thrust
+092 Cruel Attack
+093 Vile Assault
+094 Poison Arrow
+095 Weary Thrust (useless skill)
+096 Vorpal Blade (useless skill)
+097 0x097 (filler skill)
+098 0x098 (filler skill)
+099 0x099 (filler skill)
+09A 0x09A (filler skill)
+09B 0x09B (filler skill)
+09C 0x09C (filler skill)
+09D 0x09D (filler skill)
+09E 0x09E (filler skill)
+09F 0x09F (filler skill)
+
+================================
+//List of Summer Dream Effects//
+================================
+
+100 Summer Dream (knocks all enemies down) Default Fusion Spell
+101 Summer Dream (knocks all allies down)
+102 Summer Dream (knocks everyone down)
+103 Summer Dream (always No Effect!)
+104 Summer Dream (fully restores Minato's HP and SP)
+105 Summer Dream (fully restores enemies HP and SP)
+106 Summer Dream (fully restores HP and SP to party members as well as enemies)
+107 Summer Dream (damages Minato)
+108 Summer Dream (inflicts 2000 damage on all enemies)
+109 Summer Dream (inflicts ailments on everyone)
+10A Summer Dream (targets Minato but always misses)
+10B Summer Dream (targets Minato but always misses)
+10C Summer Dream (instantly kills a single enemy)
+10D Summer Dream (halves all foes HP and SP)
+10E Summer Dream (halves everyones HP and SP)
+10F Summer Dream (reduces all foes HP to 1)
+
+================================================================================
+//Manually Performed Fusion Spells// (you have GOT to kiss me for this) :D :D :D
+================================================================================
+
+110 Jack Brothers (Knocks all foes down, medium odds)
+111 Ardhanari (Deals massive Fire damage to all foes)
+112 Trickster Inflicts random ailments on all foes)
+113 Infinity (Invulnerability for 1 turn, entire party)
+114 Valhalla (Invulnerability for 1 turn, 1 ally but...)
+115 Summer Dream (Unpredictable effect)
+116 Armageddon (Deals ultimate damage to all foes)
+117 Cadenza (Restores 50% HP and evasion up, entire party)
+118 Scarlet Havoc (Deals heavy Slash damage to all foes)
+119 Frolic (Restores party's HP, but sometimes...)
+11A Dreamfest (Charms all foes, high odds)
+11B King and I (Deals medium Ice damage, and Freezes all foes)
+11C Best Friends (Combines all -kaja skills on 1 ally)
+11D Shadow Hound (Deals heavy Strike damage to all foes)
+11E Thunder Call (Deals heavy Electricity damage and Shocks all foes)
+11F Last Judge (Deals severe Almighty damage to all foes)
+120 Raktapaksha (Knocks Down all foes+Dekaja)
+121 Justice (Halves all foes HP via Light magic)
+
+===================================================================
+//Extra Skills, these skills will ALWAYS cause the TLB miss error//
+===================================================================
+
+122 Trickster (always Command Ignored+charm self)
+123 0x123 (useless skill)
+124 0x124 (useless skill)
+125 Primal Darkness ("The Answer" Final Boss's almighty attack with a nice graphic effect, attacks a single foe for "The Journey" and all foes for "The Answer" - This skill is fine to use in "The Journey" but it WILL freeze the game for 30+ seconds if used in "The Answer")
+126 Dark Embrace (useless skill)
+127 Primal Darkness (useless skill for "The Journey" but works without a problem for "The Answer", attacks all foes)
+128 Primal Darkness (useless skill for "The Journey" but works without a problem for "The Answer", attacks all foes)
+129 0x129 (useless skill)
+12A (useless skill)
+12B (useless skill)
+12C (useless skill)
+12D (useless skill)
+12E (useless skill)
+12F (useless skill)
+130 Pierce Attack (useless skill)
+131 Fire Attack (useless skill)
+132 Summon (useless skill)
+133 Summon (useless skill)
+134 Armed&Ready (turns Minato into a bomb ready to explode)
+135 Sacrifice (same as Last Resort)
+136 Arcana Shift (useless skill)
+137 Arcana Shift (useless skill)
+138 Arcana Shift (useless skill)
+139 Arcana Shift (useless skill)
+13A Arcana Shift
+13B Arcana Shift
+13C Arcana Shift
+13D Arcana Shift
+13E Arcana Shift
+13F Night Queen
+140 All-Out 2 (mimics the normal all-out attack performed by party members)
+141 All-Out 3 (mimics the normal all-out attack performed by party members)
+142 All-Out 4 (mimics the normal all-out attack performed by party members)
+143 Plume of Dusk (useless skill)
+144 Analyze (useless skill)
+145 Oracle (Fuuka's Oracle, targets all foes and has random effects)
+146 Full Analysis (useless skill)
+147 Oracle (Fuuka's Oracle, targets entire party, fully restoring HP)
+148 Oracle (Fuuka's Oracle, targets entire party, fully restoring SP)
+149 Oracle (Fuuka's Oracle, targets entire party, fully restoring both HP and SP)
+14A Oracle
+14B Oracle
+14C All-Out 2L
+14D All-Out 3L
+14E All-Out 4L
+14F Support Scan
+150 Third Eye (useless skill)
+151 Mind DJ (useless skill)
+152 DJ Queen (useless skill)
+153 Escape Route (useless skill)
+154 Healing Wave (useless skill)
+155 Summon (useless skill)
+156 Orgia Mode (useless skill)
+157 Great Seal (Unleashes the power within you to seal Nyx) (doesn't work, so don't bother trying)
+158 0x158 (useless skill)
+159 0x159 (useless skill)
+15A (useless skill)
+15B Wind Attack
+15C Elec Attack
+15D Fire Attack
+15E Pierce Attack
+15F Strike Attack
+160 Summon (useless skill)
+161 Summon (useless skill)
+162 Summon (useless skill)
+163 Prophecy of Ruin (almost always inflicts the Fear ailment on all foes+really cool graveyard graphic effect)
+164 Heartbreaker (almighty attack that hits all foes+nice heart crack graphic effect)
+165 Unite (useless skill)
+166 Separate (useless skill)
+167 Pierce Attack (useless skill)
+168 Pierce Attack (useless skill)
+169 Samarecarm (tries to summon Metis back to life, doesn't work for "The Journey"....haven't tried yet for "The Answer")
+16A Samarecarm
+16B Charge
+16C Giga Spark
+16D Wheel of Fortune
+16E Wheel of Fortune
+16F Wheel of Fortune
+170 Paradigm Shift (Nix's skill - changes elemental affinities) (not really)
+171 Wheel of Fortune (similar to Prophecy of Ruin)
+172 Wheel of Fortune (similar to Heartbreaker)
+173 E Attack Up (raises attack for the entire party)
+174 P Attack Up (raises all foes' attack)
+175 E Attack Down (lowers attack for the entire party)
+176 P Attack Down (lowers all foes' attack)
+177 E Defense Up (raises defense for the entire party
+178 P Defense Up (raises all foes' defense)
+179 E Defense Down (lowers defense for the entire party)
+17A P Defense Down
+17B E Panic
+17C P Panic
+17D E Rage
+17E P Rage
+17F E Distress
+180 P Distress
+181 E Fear (applies the Fear ailment on the entire party)
+182 P Fear (applies the Fear ailment on all foes)
+183 E Damage Low (deals low damage to the entire party)
+184 P Damage Low (deals low damage to all foes)
+185 E Damage Mid (deals medium damage to the entire party)
+186 P Damage Mid (deals medium damage to all foes)
+187 E Damage High (deals high damage to the entire party)
+188 P Damage High (deals high damage to all foes)
+189 E Heal (heals the entire party)
+18A P Heal (heals all foes)
+18B Almighty Attack
+18C Arcana Shift
+18D Arcana Shift
+18E Arcana Shift
+18F Arcana Shift
+190 Band Aid
+191 Medicine
+192 Bead
+193 Snuff Soul
+194 Chewing Soul
+195 Precious Egg
+196 Soma
+197 (filler skill)
+198 (filler skill)
+199 (filler skill)
+19A 0x19A (filler skill)
+19B Muscle Drink
+19C Odd Morsel
+19D Rancid Gravy
+19E Powerful Drug
+19F Cold Medicine
+1A0 Energy Drink
+1B6 Homunculus
+1B7 Plume of Dusk
+1D0 Resist Slash
+1D1 Null Slash
+1D2 Repel Slash
+1D3 Absorb Slash
+1D4 Resist Strike
+1D5 Null Strike
+1D6 Repel Strike
+1D7 Absorb Strike
+1D8 Resist Pierce
+1D9 Null Pierce
+1DA Repel Pierce
+1DB Absorb Pierce
+1DC Resist Fire
+1DD Null Fire
+1DE Repel Fire
+1DF Absorb Fire
+1E0 Resist Ice
+1E1 Null Ice
+1E2 Repel Ice
+1E3 Absorb Ice
+1E4 Resist Elec
+1E5 Null Elec
+1E6 Repel Elec
+1E7 Absorb Elec
+1E8 Resist Wind
+1E9 Null Wind
+1EA Repel Wind
+1EB Absorb Wind
+1EC Resist Light
+1ED Null Light
+1EE Repel Light
+1EF Resist Dark
+1F0 Null Dark
+1F1 Repel Dark
+1F2 Null Charm
+1F3 Null Distress
+1F4 Null Panic
+1F5 Null Fear
+1F6 Null Rage
+1F7 Null Freeze
+1F8 Null Shock
+1F9 Null Poison
+1FA UnshaKen  Will
+1FB Masakados
+
+==================
+//Passive Skills//
+==================
+
+1FC Dodge Slash
+1FD Evade Slash
+1FE Dodge Strike
+1FF Evade Strike
+200 Dodge Pierce
+201 Evade Pierce
+202 Dodge Fire
+203 Evade Fire
+204 Dodge Ice
+205 Evade Ice
+206 Dodge Wind
+207 Evade Wind
+208 Dodge Elec
+209 Evade Elec
+20A Stamina Up 1
+20B Stamina Up 2
+20C Stamina Up 3
+20D 0x20D (filler skill)
+20E Premonition
+20F Angelic Grace
+210 Fire Boost
+211 Fire Amp
+212 Ice Boost
+213 Ice Amp
+214 Elec Boost
+215 Elec Amp
+216 Wind Boost
+217 Wind Amp
+218 Fast Retreat
+219 HP Up 1
+21A HP Up 2
+21B HP Up 3
+21C SP Up 1
+21D SP Up 2
+21E SP Up 3
+21F Raging Tiger
+220 Counter
+221 Counterstrike
+222 High Counter
+223 Regenerate 1
+224 Regenerate 2
+225 Regenerate 3
+226 Invigorate 1
+227 Invigorate 2
+228 Invigorate 3
+229 Growth 1
+22A Growth 2
+22B Growth 3
+22C 0x22C (filler skill)
+22D Auto-Tarukaja
+22E Auto-Rakukaja
+22F Auto-Sukukaja
+230 Alertness
+231 Sharp Student
+232 Apt Pupil
+233 Ali Dance
+234 Firm Stance
+235 Spell Master
+236 Arms Master
+237 HP Up
+238 SP Up
+239 0x239 (filler skill)
+23A Divine Grace
+23B Endure
+23C Enduring Soul
+23D Heavy Master
+23E Magic Skill Up
+23F Physical Skill Up
+240 0x240 (filler skill)
+241 0x240 (filler skill)
+242 0x240 (filler skill)
+243 0x243 (filler skill)
+244 Rosary
+245 Prayer Beads
+246 Spear Master
+247 Bow Master 
+248 1-handed Sword Master
+249 2-handed Sword Master
+24A Fist Master
+24B Survive Light
+24C Survive Dark
+24D Auto-Marakukaja
+24E Auto-Matarukaja
+24F Auto-Masukukaja
+250 Charm Boost
+251 Poison Boost
+252 Distress Boost
+253 Panic Boost
+254 Fear Boost
+255 Rage Boost
+25A Poison Boost
+256 Ailment Boost
+257 Hama Boost
+258 Mudo Boost
+259 Endure Light
+25A Endure Dark
+25B 0x20B (filler skill)
+25C 0x20C (filler skill)
+25D Cool Breeze
+25E Victory Cry
+25F Spring of Life
+260 Spring of Life
+261 For Debug
+262 Fast-Heal
+263 Insta-Heal
+264 Resist Charm
+265 Resist Distress
+266 Resist Panic
+267 Resist Fear
+268 Resist Rage
+269 Resist Freeze
+26A Resist Poison
+26B Resist Poison
+26C HP Up High
+26D SP Up High
+26E 0x26E (filler skill)
+26F 0x26F (filler skill)
+
+===========================
+//Enemy Digits start here//
+===========================
+
+270 000
+271 Cowardly Maya
+272 Test
+
+==========================
+//Totally useless skills//
+==========================
+
+0A0 +charm(low) (useless skill)
+0A1 +charm(med) (useless skill)
+0A2 +charm(high) (useless skill)
+0A3 +distress(low) (useless skill)
+0A4 +distress(med) (useless skill)
+0A5 +distress(high) (useless skill)
+0A6 +panic(low) (useless skill)
+0A7 +panic(med) (useless skill)
+0A8 +panic(high) (useless skill)
+0A9 +fear(low) (useless skill)
+0AA +fear(med) (useless skill)
+0AB +fear(high) (useless skill)
+0AC +rage(low) (useless skill)
+0AD +rage(med) (useless skill)
+0AE +rage(high) (useless skill)
+0AF +poison(low) (useless skill)
+
+================================
+//Healing/Support Magic Skills//
+================================
+
+0C0 Dia
+0C1 Diarama
+0C2 Diarahan
+0C3 Media
+0C4 Medirama
+0C5 Mediarahan
+0C6 Salvation
+0C7 Patra
+0C8 Me patra
+0C9 Re patra
+0CA Posumundi
+0CB Amrita
+0CC Recarm
+0CD Samarecarm
+0CE Tarunda
+0CF Matarunda
+0D0 Sukunda
+0D1 Masukunda
+0D2 Rakunda
+0D3 Marakunda
+0D4 Dekunda
+0D5 0x0D5 (filler skill)
+0D6 Tarukaja
+0D7 Matarukaja
+0D8 Sukukaja
+0D9 Masukukaja
+0DA Rakukaja
+0DB Marakukaja
+0DC Power Charge
+0DD Mind Charge
+0DE 0x0DE (useless skill)
+0DF Dekaja
+0E0 Tetrakarn
+0E1 Makarakarn
+0E2 Rebellion
+0E3 Revolution
+0E4 0x0E4 (useless skill)
+0E5 Fire Break
+0E6 Ice Break
+0E7 Wind Break
+0E8 Electricity Break
+0E9 Traesto
+0EA Trafuri
+0EB Healing Wave
+0EC Recarmdra
+0ED Charmdi
+0EE Enradi

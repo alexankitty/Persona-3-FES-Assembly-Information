@@ -1,0 +1,345 @@
+====================
+//Enemy mod digits//
+====================
+
+Note*	"Normal" enemies work great;
+	"Special" enemies (eg: Chidori, Takaya, Jin) ...not so great. @_@
+
+
+0000 = Nothing
+0001 = Cowardly Maya
+0002 = Test
+0003 = =filler=
+0004 = =filler=
+0005 = Magic Hand
+0006 = Dancing Hand
+0007 = Killing Hand
+0008 = Almighty Hand
+0009 = Laughing Table
+000A = Crying Table
+000B = Angry Table
+000C = Sleeping Table
+000D = Magical Magus
+000E = Wondrous Magus
+000F = Prime Magus
+0010 = Grand Magus
+0011 = Merciless Maya
+0012 = =filler=
+0013 = =filler=
+0014 = =filler=
+0015 = Muttering Tiara
+0016 = Grieving Tiara
+0017 = Writhing Tiara
+0018 = Shouting Tiara
+0019 = Spurious Book
+001A = Maniacal Book
+001B = Silent Book
+001C = Wrathful Book
+001D = Tranquil Idol
+001E = Liberating Idol
+001F = Ruinous Idol
+0020 = Vehement Idol
+0021 = Frivolous Maya
+0022 = =filler=
+0023 = =filler=
+0024 = =filler=
+0025 = Venus Eagle
+0026 = Dark Eagle
+0027 = Jupiter Eagle
+0028 = Eternal Eagle
+0029 = Creation Relic
+002A = Constancy Relic
+002B = Growth Relic
+002C = Change Relic
+002D = Elegant Mother
+002E = Regal Mother
+002F = Pistil Mother
+0030 = Divine Mother
+0031 = Haughty Maya
+0032 = =filler=
+0033 = =filler=
+0034 = =filler=
+0035 = Grave Beetle
+0036 = Adamant Beetle
+0037 = Golden Beetle
+0038 = Emperor Beetle
+0039 = Avenger Knight
+003A = Champion Knight
+003B = Hell Knight
+003C = Intrepid Knight
+003D = Solid Castle
+003E = Power Castle
+003F = Death Castle
+0040 = King Castle
+0041 = Indolent Maya
+0042 = =filler=
+0043 = =filler=
+0044 = =filler=
+0045 = Trance Twins
+0046 = Killer Twins
+0047 = Death Twins
+0048 = Crazy Twins
+0049 = Corrupt Tower
+004A = Dogmatic Tower
+004B = Apostate Tower
+004C = Fanatic Tower
+004D = Blue Sigil
+004E = Red Sigil
+004F = Green Sigil
+0050 = White Sigil
+0051 = Insidious Maya
+0052 = =filler=
+0053 = =filler=
+0054 = =filler=
+0055 = Obsessed Cupid
+0056 = Jealous Cupid
+0057 = Devoted Cupid
+0058 = Gracious Cupid
+0059 = Lustful Snake
+005A = Immoral Snake
+005B = Carnal Snake
+005C = Amorous Snake
+005D = Soul Dancer
+005E = Ardent Dancer
+005F = Royal Dancer
+0060 = Natural Dancer
+0061 = Ill-fated Maya
+0062 = =filler=
+0063 = =filler=
+0064 = =filler=
+0065 = Bestial Wheel
+0066 = Mach Wheel
+0067 = Brave Wheel
+0068 = Battle Wheel
+0069 = Wild Drive
+006A = Killer Drive
+006B = Slaughter Drive
+006C = Rampage Drive
+006D = Arcane Turret
+006E = Scarlet Turret
+006F = Wicked Turret
+0070 = Hallowed Turret
+0071 = Visceral Maya
+0072 = =filler=
+0073 = =filler=
+0074 = =filler=
+0075 = Hakurou Musha
+0076 = Kaiden Musha
+0077 = Onnen Musha
+0078 = Tenjin Musha
+0079 = Daring Gigas
+007A = Steel Gigas
+007B = Furious Gigas
+007C = Mythical Gigas
+007D = Wild Beast
+007E = Enslaved Beast
+007F = Mighty Beast
+0080 = Nemean Beast
+0081 = Desirous Maya
+0082 = =filler=
+0083 = =filler=
+0084 = =filler=
+0085 = Black Raven
+0086 = Vicious Raven
+0087 = Ice Raven
+0088 = Amenti Raven
+0089 = Phantom Mage
+008A = Phantom Master
+008B = Phantom Lord
+008C = Phantom King
+008D = Death Seeker
+008E = Fate Seeker
+008F = Noble Seeker
+0090 = Acheron Seeker
+0091 = Imprudent Maya
+0092 = =filler=
+0093 = =filler=
+0094 = =filler=
+0095 = Bronze Dice
+0096 = Iron Dice
+0097 = Silver Dice
+0098 = Platinum Dice
+0099 = Mind Dice
+009A = Curse Dice
+009B = Death Dice
+009C = Reckoning Dice
+009D = Flowing Sand
+009E = Perpetual Sand
+009F = Infinite Sand
+00A0 = Eternal Sand
+00A1 = Bigoted Maya
+00A2 = =filler=
+00A3 = =filler=
+00A4 = =filler=
+00A5 = Justice Sword
+00A6 = Conviction Sword
+00A7 = Judgement Sword
+00A8 = Doom Sword
+00A9 = Heat Balance
+00AA = Sky Balance
+00AB = World Balance
+00AC = Light Balance
+00AD = Order Giant
+00AE = Stasis Giant
+00AF = Harmony Giant
+00B0 = Void Giant
+00B1 = Devious Maya
+00B2 = =filler=
+00B3 = =filler=
+00B4 = =filler=
+00B5 = Minotaur IV
+00B6 = Minotaur III
+00B7 = Minotaur II
+00B8 = Minotaur I
+00B9 = Jotun of Power
+00BA = Jotun of Blood
+00BB = Jotun of Evil
+00BC = Jotun of Grief
+00BD = Mighty Cyclops
+00BE = Mad Cyclops
+00BF = Fierce Cyclops
+00C0 = Chaos Cyclops
+00C1 = The Reaper 	(Works flawlessly)
+00C2 = =filler=
+00C3 = =filler=
+00C4 = =filler=
+00C5 = Wealth Hand
+00C6 = Treasure Hand
+00C7 = Supreme Hand
+00C8 = Opulent Hand
+00C9 = Luxury Hand
+00CA = Glorious Hand
+00CB = Berserk Turret
+00CC = Indolent Maya
+00CD = Stoic Snake
+00CE = Burning Beetle
+00CF = Loss Giant
+00D0 = Affection Relic
+00D1 = Phantom Hero
+00D2 = Grudge Tower
+00D3 = =filler=
+00D4 = =filler=
+00D5 = =filler=
+00D6 = =filler=
+00D7 = =filler=
+00D8 = =filler=
+00D9 = =filler=
+00DA = =filler=
+00DB = =filler=
+00DC = =filler=
+00DD = =filler=
+00DE = =filler=
+00DF = =filler=
+00E0 = Cowardly Maya
+00E1 = Cowardly Maya
+00E2 = =filler= 	(Appears as the 'Wheel' of Fortune)
+00E3 = =filler= 	(Appears as the 'Wheel' of Fortune)
+00E4 = =filler= 	(Appears as the 'Wheel' of Fortune)
+00E5 = =filler= 	(Appears as the 'Wheel' of Fortune)
+00E6 = =filler= 	(Appears as the 'Wheel' of Fortune)
+00E7 = =filler= 	(Appears as the Wheel of Fortune)
+00E8 = =filler= 	(Appears as a Magic Carpet)
+00E9 = Metis    	(The Answer Boss)
+00EA = ???      	(Minato's shadow from 'The Answer')
+00EB = Akihiko  	(The Answer Boss)
+00EC = Ken      	(The Answer Boss)
+00ED = Junpei   	(The Answer Boss)
+00EE = Koromaru 	(The Answer Boss)
+00EF = Yukari   	(The Answer Boss)
+00F0 = Mitsuru  	(The Answer Boss)
+00F1 = Erebus   	(The Answer Final Boss) (Freezes the game upon summoning the Orb)
+00F2 = =filler= 	(Erebus' Orb attack)
+00F3 = =filler=
+00F4 = =filler=
+00F5 = =filler=
+00F6 = =filler=
+00F7 = =filler=
+00F8 = =filler=
+00F9 = =filler=
+00FA = =filler=
+00FB = =filler=
+00FC = =filler=
+00FD = =filler=
+00FE = =filler=
+00FF = =filler=
+0100 = Priestess 	(Full Moon Boss) (Those 'BJ' letters make me think of "Blowjob". ...I'm a perv, I know.)
+0101 = Empress 		(Full Moon Boss)
+0102 = Emperor 		(Full Moon Boss)
+0103 = Hierophant 	(Full Moon Boss)
+0104 = Lovers		(Full Moon Boss)
+0105 = Chariot 		(Full Moon Boss)
+0106 = Justice 		(Full Moon Boss)
+0107 = Hermit 		(Full Moon Boss)
+0108 = Chidori		(Model disappears when using skills)
+0109 = Fortune		(Full Moon Boss) (Freezes the game when trying to use "Wheel of Fortune")
+010A = Strength 	(Full Moon Boss)
+010B = Takaya 		(Model disappears and freezes the game when using skills)
+010C = Jin 		(Model disappears and freezes the game when using skills)
+010D = Hanged Man 	(Full Moon Boss)
+010E = Chidori 		(Keeps using "Slash Attack")
+010F = Jin 		(Freezes the game when using skills)
+0110 = Takaya		(Freezes the game when using skills)
+0111 = Nyx Avatar 	(Fool Arcana)       (Does nothing other than "Smiling Arrogantly" -_-)
+0112 = Nyx 		(The Final Boss... Death = Ouch)
+0113 = Muttering Tiara
+0114 = Muttering Tiara
+0115 = =Unknown=	(Crashes the emulator)
+0116 = Statue 		(Fire type)
+0117 = Statue		(Ice type)
+0118 = Statue 		(Electricity type)
+0119 = Devious Maya
+011A = Nyx Avatar 	(Magician Arcana)   (Fire type)
+011B = Nyx Avatar 	(Priestess Arcana)  (Ice type)
+011C = Nyx Avatar 	(Empress Arcana)    (Wind type)
+011D = Nyx Avatar 	(Emperor Arcana)    (Lightning type)
+011E = Nyx Avatar 	(Hierophant Arcana) (Physical type)
+011F = Nyx Avatar 	(Lovers Arcana)     (Keeps using "Almighty Attack")
+0120 = Nyx Avatar 	(Chariot Arcana)    (Physical and Buff type)
+0121 = Nyx Avatar 	(Justice Arcana)    (Physical and Light type)
+0122 = Nyx Avatar 	(Hermit Arcana)     (Buff, Ailment and Dark type)
+0123 = Nyx Avatar 	(Fortune Arcana)    (All Element type)
+0124 = Nyx Avatar 	(Strength Arcana)   (Buff, Debuff and Physical type)
+0125 = Nyx Avatar 	(Hanged Man Arcana) (Ailment, Dark, Buff, Almighty type)
+0126 = Elizabeth  	(...Sadly, all she does is "Wait")
+0127 = Devious Maya
+0128 = Nyx Avatar 	(Death Arcana) (Final Form)
+0129 = =filler=
+012A = =filler=
+012B = =filler=
+012C = =filler=
+012D = =filler=
+012E = =filler=
+012F = =filler=
+0130 = Venus Eagle
+0131 = Dancing Hand
+0132 = Crying Table
+0133 = Golden Beetle
+0134 = Furious Gigas
+0135 = Magical Magus
+0136 = Arcane Turret
+0137 = Hell Knight
+0138 = Judgement Sword
+0139 = Stasis Giant
+013A = Royal Dancer
+013B = Noble Seeker
+013C = Carnal Snake
+013D = Fierce Cyclops
+013E = Corrupt Tower
+013F = Haughty Maya
+0140 = Soul Dancer
+0141 = Spurious Book
+0142 = Heat Balance
+0143 = Dancing Hand
+0144 = Laughing Table
+0145 = El Dorado Beast
+0146 = Immortal Gigas
+0147 = Brilliant Cyclops
+0148 = Harem Dancer
+0149 = Neo Minotaur
+014A = Spastic Turret
+014B = Conceited Maya
+014C = Rebellious Cyclops
+014D = Primitive Idol
+014E = =filler=
+014F = =filler=
+0150 = Nothing		(Freezes the game)

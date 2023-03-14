@@ -1,0 +1,3 @@
+Notes about decomp scripts.
+Atlas puts BFs in some of the game's table's for some reason.
+Decompiled scripts will be included in here as well

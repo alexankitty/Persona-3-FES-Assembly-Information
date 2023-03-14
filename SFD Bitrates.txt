@@ -1,0 +1,163 @@
+GAME_START.SFD':
+  Duration: 00:00:26.02
+  bitrate: 2855 kb/s
+
+P3CT001_01.SFD':
+  Duration: 00:03:51.90
+  bitrate: 4920 kb/s
+
+P3CT001_02.SFD':
+  Duration: 00:01:00.46
+  bitrate: 4533 kb/s
+
+P3CT002.SFD':
+  Duration: 00:00:26.02
+  bitrate: 4762 kb/s
+
+P3CT002_00.SFD':
+  Duration: 00:00:08.68
+  bitrate: 4479 kb/s
+
+P3CT003.SFD':
+  Duration: 00:00:40.02
+  bitrate: 4856 kb/s
+
+P3CT004.SFD':
+  Duration: 00:01:04.07
+  bitrate: 4873 kb/s
+
+P3CT005.SFD':
+  Duration: 00:03:26.86
+  bitrate: 4818 kb/s
+
+P3CT006.SFD':
+  Duration: 00:00:41.34
+  bitrate: 4940 kb/s
+
+P3CT007.SFD':
+  Duration: 00:00:29.06
+  bitrate: 4948 kb/s
+
+P3CT008.SFD':
+  Duration: 00:00:19.82
+  bitrate: 4699 kb/s
+
+P3CT009.SFD':
+  Duration: 00:01:06.20
+  bitrate: 4933 kb/s
+
+P3CT010.SFD':
+  Duration: 00:00:23.49
+  bitrate: 4936 kb/s
+
+P3CT013.SFD':
+  Duration: 00:00:14.98
+  bitrate: 4635 kb/s
+
+P3CT015.SFD':
+  Duration: 00:01:48.42
+  bitrate: 5103 kb/s
+
+P3CT017.SFD':
+  Duration: 00:00:08.01
+  bitrate: 4510 kb/s
+
+P3CT019_01.SFD':
+  Duration: 00:00:25.03
+  bitrate: 4946 kb/s
+
+P3CT019_02.SFD':
+  Duration: 00:02:03.96
+  bitrate: 4920 kb/s
+
+P3CT021.SFD':
+  Duration: 00:00:32.47
+  bitrate: 4928 kb/s
+
+P3CT022_01.SFD':
+  Duration: 00:00:06.67
+  bitrate: 4499 kb/s
+
+P3CT022_02.SFD':
+  Duration: 00:00:06.67
+  bitrate: 4487 kb/s
+
+P3CT023.SFD':
+  Duration: 00:02:50.61
+  bitrate: 4907 kb/s
+
+P3CT026.SFD':
+  Duration: 00:00:20.49
+  bitrate: 4925 kb/s
+
+P3CT027_01.SFD':
+  Duration: 00:01:28.41
+  bitrate: 4759 kb/s
+
+P3CT027_02.SFD':
+  Duration: 00:01:25.35
+  bitrate: 4882 kb/s
+
+P3CT028.SFD':
+  Duration: 00:01:57.65
+  bitrate: 4929 kb/s
+
+P3CT029.SFD':
+  Duration: 00:01:19.38
+  bitrate: 4511 kb/s
+
+P3CT030_01.SFD':
+  Duration: 00:01:20.42
+  bitrate: 4858 kb/s
+
+P3CT030_02.SFD':
+  Duration: 00:00:25.01
+  bitrate: 4567 kb/s
+
+P3CTOP.SFD':
+  Duration: 00:01:33.41
+  bitrate: 4094 kb/s
+
+P3CTOP2.SFD':
+  Duration: 00:01:29.08
+  bitrate: 4870 kb/s
+
+P3FCT001.SFD':
+  Duration: 00:01:45.77
+  bitrate: 4505 kb/s
+
+P3FCT002.SFD':
+  Duration: 00:02:22.46
+  bitrate: 4321 kb/s
+
+P3FCT003.SFD':
+  Duration: 00:00:43.71
+  bitrate: 4627 kb/s
+
+P3FCT004.SFD':
+  Duration: 00:00:38.30
+  bitrate: 4341 kb/s
+
+P3FCT005.SFD':
+  Duration: 00:01:53.98
+  bitrate: 4441 kb/s
+
+P3FCT006.SFD':
+  Duration: 00:00:19.79
+  bitrate: 4515 kb/s
+
+P3FCT007.SFD':
+  Duration: 00:00:09.00
+  bitrate: 1729 kb/s
+
+STAFF_ROLL_A.SFD':
+  Duration: 00:06:04.97
+  bitrate: 4281 kb/s
+
+STAFF_ROLL_B.SFD':
+  Duration: 00:06:04.97
+  bitrate: 4271 kb/s
+
+STAFF_ROLL_F.SFD':
+  Duration: 00:05:51.99
+  bitrate: 4371 kb/s
