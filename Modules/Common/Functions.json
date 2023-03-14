@@ -1856,8 +1856,8 @@
   {
     "Index": "0x0090",
     "ReturnType": "void",
-    "Name": "FUNCTION_0090",
-    "Description": "002C75C0",
+    "Name": "AI_ACT_WAIT_FLAVOR_TEXT",
+    "Description": "Similar to AI_ACT_WAIT, but includes flavor text from the MSG tbl. See also Nyx Smiles Arrogantly.",
     "Parameters": [
     ]
   },
