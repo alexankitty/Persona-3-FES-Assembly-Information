@@ -145,3 +145,13 @@ returns to 0010BF70
 00112754
 returns to 004300CC
 somehow we end up here?
+
+7B92B0 function pointers
+every function is 0x8 in size
+3a2150 11c
+35aeb0 0007 bitchk
+35aef0 0008 biton
+35af50 0009 bitoff
+
+0083A21C base bit field area?
+0083A39C bit 3089(0x286) is here.

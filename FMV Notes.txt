@@ -84,3 +84,11 @@ c2
 addu v0,v1
 lui v0,0x005d
 addiu v0,v0,0x4B70
+
+FMV Selection
+00265030
+
+002651F0 Opening 1 ID select
+00265214 Opening 2 ID select
+
+fmv background color 0F1F28

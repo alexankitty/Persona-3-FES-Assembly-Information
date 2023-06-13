@@ -1,11 +1,35 @@
-C:\ffmpeg\bin\ffmpeg.exe -i P3CT002_00.SFD -vcodec mpeg1video -vf "nnedi=weights=nnedi3_weights.bin:field=tf" -b:v 104857K -maxrate 104857K -minrate 104857K -bufsize 104857K -s 640x448 -an P3CT002_00.m1v
-C:\ffmpeg\bin\ffmpeg.exe -i P3CT008.SFD -vcodec mpeg1video -vf "nnedi=weights=nnedi3_weights.bin" -b:v 104857K -maxrate 104857K -minrate 104857K -bufsize 4511k -s 640x448 -an P3CT008.m1v
-C:\ffmpeg\bin\ffmpeg.exe -i P3CT019_01.SFD -vcodec mpeg1video -vf "nnedi=weights=nnedi3_weights.bin" -b:v 104857K -maxrate 104857K -minrate 104857K -bufsize 104857K -s 640x448 -an P3CT019_01.m1v
-C:\ffmpeg\bin\ffmpeg.exe -i P3CT029.SFD -vcodec mpeg1video -vf "nnedi=weights=nnedi3_weights.bin" -b:v 104857K -maxrate 104857K -minrate 104857K -bufsize 104857K -s 640x448 -an P3CT029.m1v
-C:\ffmpeg\bin\ffmpeg.exe -i P3CT030_01.SFD -vcodec mpeg1video -vf "nnedi=weights=nnedi3_weights.bin" -b:v 104857K -maxrate 104857K -minrate 104857K -bufsize 104857K -s 640x448 -an P3CT030_01.m1v
-C:\ffmpeg\bin\ffmpeg.exe -i P3CT030_02.SFD -vcodec mpeg1video -vf "nnedi=weights=nnedi3_weights.bin" -b:v 104857K -maxrate 104857K -minrate 104857K -bufsize 104857K -s 640x448 -an P3CT030_02.m1v
-C:\ffmpeg\bin\ffmpeg.exe -i P3FCT006.SFD -vcodec mpeg1video -vf "nnedi=weights=nnedi3_weights.bin" -b:v 104857K -maxrate 104857K -minrate 104857K -bufsize 104857K -s 640x448 -an P3FCT006.m1v
-C:\ffmpeg\bin\ffmpeg.exe -i P3CT003.SFD -vcodec mpeg1video -vf "nnedi=weights=nnedi3_weights.bin" -b:v 4565K -maxrate 4565K -minrate 4565K -bufsize 4565K -s 640x448 -an P3CT003.m1v
+p3ct002_0.sfd
+p3ct008.sfd
+p3ct019_01.sfd
+p3ct022_01.sfd // technically cropped but can't be uncropped because of the photograph at the end.
+p3ct022_02.sfd // same as above
+p3ct029.sfd
+p3ct030_01.sfd
+p3ct030_02.sfd
+p3fct006.sfd
+
+transform settings
+---
+distort
+x -160 
+2560x1792
+actual project settings
+---
+Frame size: 2560 x 1472 (8000:5037)
+Frame rate: 29.97 fps
+Pixel aspect ratio: 0.913242
+Color space: ITU-R 709
+Interlaced: no
+
+ffmpeg -i P3CT002_00.SFD -vcodec mpeg1video -vf "nnedi=weights=nnedi3_weights.bin:field=tf" -b:v 104857K -maxrate 104857K -minrate 104857K -bufsize 104857K -s 640x448 -an P3CT002_00.m1v
+ffmpeg -i P3CT008.SFD -vcodec mpeg1video -vf "nnedi=weights=nnedi3_weights.bin" -b:v 104857K -maxrate 104857K -minrate 104857K -bufsize 4511k -s 640x448 -an P3CT008.m1v
+ffmpeg -i P3CT019_01.SFD -vcodec mpeg1video -vf "nnedi=weights=nnedi3_weights.bin" -b:v 104857K -maxrate 104857K -minrate 104857K -bufsize 104857K -s 640x448 -an P3CT019_01.m1v
+ffmpeg -i P3CT029.SFD -vcodec mpeg1video -vf "nnedi=weights=nnedi3_weights.bin" -b:v 104857K -maxrate 104857K -minrate 104857K -bufsize 104857K -s 640x448 -an P3CT029.m1v
+ffmpeg -i P3CT030_01.SFD -vcodec mpeg1video -vf "nnedi=weights=nnedi3_weights.bin" -b:v 104857K -maxrate 104857K -minrate 104857K -bufsize 104857K -s 640x448 -an P3CT030_01.m1v
+ffmpeg -i P3CT030_02.SFD -vcodec mpeg1video -vf "nnedi=weights=nnedi3_weights.bin" -b:v 104857K -maxrate 104857K -minrate 104857K -bufsize 104857K -s 640x448 -an P3CT030_02.m1v
+ffmpeg -i P3FCT006.SFD -vcodec mpeg1video -vf "nnedi=weights=nnedi3_weights.bin" -b:v 104857K -maxrate 104857K -minrate 104857K -bufsize 104857K -s 640x448 -an P3FCT006.m1v
+ffmpeg -i P3CT003.SFD -vcodec mpeg1video -vf "nnedi=weights=nnedi3_weights.bin" -b:v 4565K -maxrate 4565K -minrate 4565K -bufsize 4565K -s 640x448 -an P3CT003.m1v
+ffmpeg -i P3CTOP2.SFD -vf "nnedi=weights=nnedi3_weights.bin" -b:v 4870K -maxrate 4870K -minrate 4870K -bufsize 4565K -s 640x448 -an P3CTOP2.mp4
 
 
 
@@ -17,23 +41,23 @@ ffmpeg -i P3CT030_01.SFD -map 0:0 P3CT030_01.adx
 ffmpeg -i P3CT030_02.SFD -map 0:0 P3CT030_02.adx
 ffmpeg -i P3FCT006.SFD -map 0:0 P3FCT006.adx
 
-C:\ffmpeg\bin\ffmpeg.exe -i P3CT002_00.mp4
-C:\ffmpeg\bin\ffmpeg.exe -i P3CT008.mp4
-C:\ffmpeg\bin\ffmpeg.exe -i P3CT029.mp4 
-C:\ffmpeg\bin\ffmpeg.exe -i P3CT030_01.mp4
-C:\ffmpeg\bin\ffmpeg.exe -i P3CT030_02.mp4
-C:\ffmpeg\bin\ffmpeg.exe -i P3FCT006.mp4
-C:\ffmpeg\bin\ffmpeg.exe -i P3CT019_01.mp4
+ffmpeg -i P3CT002_00.mp4
+ffmpeg -i P3CT008.mp4
+ffmpeg -i P3CT029.mp4 
+ffmpeg -i P3CT030_01.mp4
+ffmpeg -i P3CT030_02.mp4
+ffmpeg -i P3FCT006.mp4
+ffmpeg -i P3CT019_01.mp4
 
 -vf "nnedi=weights=nnedi3_weights.bin" -c:v libx264 -preset slow -crf 19
 
-C:\ffmpeg\bin\ffmpeg.exe -i P3CT002_00.mp4 -vcodec mpeg1video -b:v 4778K -maxrate 4778K -minrate 4778K P3CT002_00.m1v 
-C:\ffmpeg\bin\ffmpeg.exe -i P3CT008.mp4 -vcodec mpeg1video -b:v 14953K -maxrate 14953K -minrate 14953K P3CT008.m1v 
-C:\ffmpeg\bin\ffmpeg.exe -i P3CT029.mp4 -vcodec mpeg1video -b:v 14166K -maxrate 14166K -minrate 14166K P3CT029.m1v 
-C:\ffmpeg\bin\ffmpeg.exe -i P3CT030_01.mp4 -vcodec mpeg1video -b:v 13542K -maxrate 13542K -minrate 13542K P3CT030_01.m1v 
-C:\ffmpeg\bin\ffmpeg.exe -i P3CT030_02.mp4 -vcodec mpeg1video -b:v 8834K -maxrate 8834K -minrate 1191K P3CT030_02.m1v 
-C:\ffmpeg\bin\ffmpeg.exe -i P3FCT006.mp4 -vcodec mpeg1video -b:v 14643K -maxrate 14643K -minrate 14643K P3FCT006.m1v 
-C:\ffmpeg\bin\ffmpeg.exe -i P3CT019_01.mp4 -vcodec mpeg1video -b:v 18700K -maxrate 18700K -minrate 18700K P3CT019_01.m1v 
+ffmpeg -i P3CT002_00.mp4 -vcodec mpeg1video -b:v 4479K -maxrate 4479K -minrate 4479K P3CT002_00.m1v 
+ffmpeg -i P3CT008.mp4 -vcodec mpeg1video -b:v 4699K -maxrate 4699K -minrate 4699K P3CT008.m1v 
+ffmpeg -i P3CT029.mp4 -vcodec mpeg1video -b:v 4511K -maxrate 4511K -minrate 4511K P3CT029.m1v 
+ffmpeg -i P3CT030_01.mp4 -vcodec mpeg1video -b:v 4858K -maxrate 4858K -minrate 4858K P3CT030_01.m1v 
+ffmpeg -i P3CT030_02.mp4 -vcodec mpeg1video -b:v 4567K -maxrate 4567K -minrate 4567K P3CT030_02.m1v 
+ffmpeg -i P3FCT006.mp4 -vcodec mpeg1video -b:v 4515K -maxrate 4515K -minrate 4515K P3FCT006.m1v 
+ffmpeg -i P3CT019_01.mp4 -vcodec mpeg1video -b:v 4946K -maxrate 4946K -minrate 4946K P3CT019_01.m1v 
 
 .\SFD_Muxer.exe -v .\P3CT002_00.M1V -o P3CT002_00.SFD -a .\P3CT002_00.sfa
 .\SFD_Muxer.exe -v .\P3CT008.M1V -o P3CT008.SFD -a .\P3CT008.sfa
@@ -42,3 +66,137 @@ C:\ffmpeg\bin\ffmpeg.exe -i P3CT019_01.mp4 -vcodec mpeg1video -b:v 18700K -maxra
 .\SFD_Muxer.exe -v .\P3CT030_02.M1V -o P3CT030_02.SFD -a .\P3CT030_02.sfa
 .\SFD_Muxer.exe -v .\P3FCT006.M1V -o P3FCT006.SFD -a .\P3FCT006.sfa
 .\SFD_Muxer.exe -v .\P3CT019_01.M1V -o P3CT019_01.SFD -a .\P3CT019_01.sfa
+
+//rip mpeg
+ffmpeg -i GAME_START.SFD -vf "nnedi=weights=nnedi3_weights.bin" -b:v 2855K -maxrate 2855K -minrate 2855K -bufsize 2855K -an GAME_START.mp4
+ffmpeg -i P3CT001_01.SFD -vf "nnedi=weights=nnedi3_weights.bin" -b:v 4920K -maxrate 4920K -minrate 4920K -bufsize 4920K -an P3CT001_01.mp4
+ffmpeg -i P3CT001_02.SFD -vf "nnedi=weights=nnedi3_weights.bin" -b:v 4533K -maxrate 4533K -minrate 4533K -bufsize 4533K -an P3CT001_02.mp4
+ffmpeg -i P3CT002.SFD -vf "nnedi=weights=nnedi3_weights.bin" -b:v 4762K -maxrate 4762K -minrate 4762K -bufsize 4762K -an P3CT002.mp4
+ffmpeg -i P3CT002_00.SFD -vf "nnedi=weights=nnedi3_weights.bin" -b:v 4479K -maxrate 4479K -minrate 4479K -bufsize 4565K -an P3CT002_00.mp4
+ffmpeg -i P3CT003.SFD -vf "nnedi=weights=nnedi3_weights.bin" -b:v 4856K -maxrate 4856K -minrate 4856K -bufsize 4565K -an P3CT003.mp4
+ffmpeg -i P3CT004.SFD -vf "nnedi=weights=nnedi3_weights.bin" -b:v 4873K -maxrate 4873K -minrate 4873K -bufsize 4565K -an P3CT004.mp4
+ffmpeg -i P3CT005.SFD -vf "nnedi=weights=nnedi3_weights.bin" -b:v 4818K -maxrate 4818K -minrate 4818K -bufsize 4565K -an P3CT005.mp4
+ffmpeg -i P3CT006.SFD -vf "nnedi=weights=nnedi3_weights.bin" -b:v 4940K -maxrate 4940K -minrate 4940K -bufsize 4565K -an P3CT006.mp4
+ffmpeg -i P3CT007.SFD -vf "nnedi=weights=nnedi3_weights.bin" -b:v 4948K -maxrate 4948K -minrate 4948K -bufsize 4565K -an P3CT007.mp4
+ffmpeg -i P3CT008.SFD -vf "nnedi=weights=nnedi3_weights.bin" -b:v 4699K -maxrate 4699K -minrate 4699K -bufsize 4565K -an P3CT008.mp4
+ffmpeg -i P3CT009.SFD -vf "nnedi=weights=nnedi3_weights.bin" -b:v 4933K -maxrate 4933K -minrate 4933K -bufsize 4565K -an P3CT009.mp4
+ffmpeg -i P3CT010.SFD -vf "nnedi=weights=nnedi3_weights.bin" -b:v 4936K -maxrate 4936K -minrate 4936K -bufsize 4565K -an P3CT010.mp4
+ffmpeg -i P3CT013.SFD -vf "nnedi=weights=nnedi3_weights.bin" -b:v 4635K -maxrate 4635K -minrate 4635K -bufsize 4565K -an P3CT013.mp4
+ffmpeg -i P3CT015.SFD -vf "nnedi=weights=nnedi3_weights.bin" -b:v 5103K -maxrate 5103K -minrate 5103K -bufsize 4565K -an P3CT015.mp4
+ffmpeg -i P3CT017.SFD -vf "nnedi=weights=nnedi3_weights.bin" -b:v 4510K -maxrate 4510K -minrate 4510K -bufsize 4565K -an P3CT017.mp4
+ffmpeg -i P3CT019_01.SFD -vf "nnedi=weights=nnedi3_weights.bin" -b:v 4946K -maxrate 4946K -minrate 4946K -bufsize 4565K -an P3CT019_01.mp4
+ffmpeg -i P3CT019_02.SFD -vf "nnedi=weights=nnedi3_weights.bin" -b:v 4920K -maxrate 4920K -minrate 4920K -bufsize 4565K -an P3CT019_02.mp4
+ffmpeg -i P3CT021.SFD -vf "nnedi=weights=nnedi3_weights.bin" -b:v 4928K -maxrate 4928K -minrate 4928K -bufsize 4565K -an P3CT021.mp4
+ffmpeg -i P3CT022_01.SFD -vf "nnedi=weights=nnedi3_weights.bin" -b:v 4499K -maxrate 4499K -minrate 4499K -bufsize 4565K -an P3CT022_01.mp4
+ffmpeg -i P3CT022_02.SFD -vf "nnedi=weights=nnedi3_weights.bin" -b:v 4487K -maxrate 4487K -minrate 4487K -bufsize 4565K -an P3CT022_02.mp4
+ffmpeg -i P3CT023.SFD -vf "nnedi=weights=nnedi3_weights.bin" -b:v 4907K -maxrate 4907K -minrate 4907K -bufsize 4565K -an P3CT023.mp4
+ffmpeg -i P3CT026.SFD -vf "nnedi=weights=nnedi3_weights.bin" -b:v 4925K -maxrate 4925K -minrate 4925K -bufsize 4565K -an P3CT026.mp4
+ffmpeg -i P3CT027_01.SFD -vf "nnedi=weights=nnedi3_weights.bin" -b:v 4759K -maxrate 4759K -minrate 4759K -bufsize 4565K -an P3CT027_01.mp4
+ffmpeg -i P3CT027_02.SFD -vf "nnedi=weights=nnedi3_weights.bin" -b:v 4882K -maxrate 4882K -minrate 4882K -bufsize 4565K -an P3CT027_02.mp4
+ffmpeg -i P3CT028.SFD -vf "nnedi=weights=nnedi3_weights.bin" -b:v 4929K -maxrate 4929K -minrate 4929K -bufsize 4565K -an P3CT028.mp4
+ffmpeg -i P3CT029.SFD -vf "nnedi=weights=nnedi3_weights.bin" -b:v 4511K -maxrate 4511K -minrate 4511K -bufsize 4565K -an P3CT029.mp4
+ffmpeg -i P3CT030_01.SFD -vf "nnedi=weights=nnedi3_weights.bin" -b:v 4858K -maxrate 4858K -minrate 4858K -bufsize 4565K -an P3CT030_01.mp4
+ffmpeg -i P3CT030_02.SFD -vf "nnedi=weights=nnedi3_weights.bin" -b:v 4567K -maxrate 4567K -minrate 4567K -bufsize 4565K -an P3CT030_02.mp4
+ffmpeg -i P3CTOP.SFD -vf "nnedi=weights=nnedi3_weights.bin" -b:v 4094K -maxrate 4094K -minrate 4094K -bufsize 4565K -an P3CTOP.mp4
+ffmpeg -i P3CTOP2.SFD -vf "nnedi=weights=nnedi3_weights.bin" -b:v 4870K -maxrate 4870K -minrate 4870K -bufsize 4565K -an P3CTOP2.mp4
+ffmpeg -i P3FCT001.SFD -vf "nnedi=weights=nnedi3_weights.bin" -b:v 4505K -maxrate 4505K -minrate 4505K -bufsize 4565K -an P3FCT001.mp4
+ffmpeg -i P3FCT002.SFD -vf "nnedi=weights=nnedi3_weights.bin" -b:v 4321K -maxrate 4321K -minrate 4321K -bufsize 4565K -an P3FCT002.mp4
+ffmpeg -i P3FCT003.SFD -vf "nnedi=weights=nnedi3_weights.bin" -b:v 4627K -maxrate 4627K -minrate 4627K -bufsize 4565K -an P3FCT003.mp4
+ffmpeg -i P3FCT004.SFD -vf "nnedi=weights=nnedi3_weights.bin" -b:v 4341K -maxrate 4341K -minrate 4341K -bufsize 4565K -an P3FCT004.mp4
+ffmpeg -i P3FCT005.SFD -vf "nnedi=weights=nnedi3_weights.bin" -b:v 4441K -maxrate 4441K -minrate 4441K -bufsize 4565K -an P3FCT005.mp4
+ffmpeg -i P3FCT006.SFD -vf "nnedi=weights=nnedi3_weights.bin" -b:v 4515K -maxrate 4515K -minrate 4515K -bufsize 4565K -an P3FCT006.mp4
+ffmpeg -i P3FCT007.SFD -vf "nnedi=weights=nnedi3_weights.bin" -b:v 1729K -maxrate 1729K -minrate 1729K -bufsize 4565K -an P3FCT007.mp4
+ffmpeg -i STAFF_ROLL_A.SFD -vf "nnedi=weights=nnedi3_weights.bin" -b:v 4281K -maxrate 4281K -minrate 4281K -bufsize 4565K -an STAFF_ROLL_A.mp4
+ffmpeg -i STAFF_ROLL_B.SFD -vf "nnedi=weights=nnedi3_weights.bin" -b:v 4271K -maxrate 4271K -minrate 4271K -bufsize 4565K -an STAFF_ROLL_B.mp4
+ffmpeg -i STAFF_ROLL_F.SFD -vf "nnedi=weights=nnedi3_weights.bin" -b:v 4371K -maxrate 4371K -minrate 4371K -bufsize 4565K -an STAFF_ROLL_F.mp4
+
+//rip audio
+ffmpeg -i GAME_START.SFD -map 0:0 GAME_START.wav
+ffmpeg -i P3CT001_01.SFD -map 0:0 P3CT001_01.wav
+ffmpeg -i P3CT001_02.SFD -map 0:0 P3CT001_02.wav
+ffmpeg -i P3CT002.SFD -map 0:0 P3CT002.wav
+ffmpeg -i P3CT002_00.SFD -map 0:0 P3CT002_00.wav
+ffmpeg -i P3CT003.SFD -map 0:0 P3CT003.wav
+ffmpeg -i P3CT004.SFD -map 0:0 P3CT004.wav
+ffmpeg -i P3CT005.SFD -map 0:0 P3CT005.wav
+ffmpeg -i P3CT006.SFD -map 0:0 P3CT006.wav
+ffmpeg -i P3CT007.SFD -map 0:0 P3CT007.wav
+ffmpeg -i P3CT008.SFD -map 0:0 P3CT008.wav
+ffmpeg -i P3CT009.SFD -map 0:0 P3CT009.wav
+ffmpeg -i P3CT010.SFD -map 0:0 P3CT010.wav
+ffmpeg -i P3CT013.SFD -map 0:0 P3CT013.wav
+ffmpeg -i P3CT015.SFD -map 0:0 P3CT015.wav
+ffmpeg -i P3CT017.SFD -map 0:0 P3CT017.wav
+ffmpeg -i P3CT019_01.SFD -map 0:0 P3CT019_01.wav
+ffmpeg -i P3CT019_02.SFD -map 0:0 P3CT019_02.wav
+ffmpeg -i P3CT021.SFD -map 0:0 P3CT021.wav
+ffmpeg -i P3CT022_01.SFD -map 0:0 P3CT022_01.wav
+ffmpeg -i P3CT022_02.SFD -map 0:0 P3CT022_02.wav
+ffmpeg -i P3CT023.SFD -map 0:0 P3CT023.wav
+ffmpeg -i P3CT026.SFD -map 0:0 P3CT026.wav
+ffmpeg -i P3CT027_01.SFD -map 0:0 P3CT027_01.wav
+ffmpeg -i P3CT027_02.SFD -map 0:0 P3CT027_02.wav
+ffmpeg -i P3CT028.SFD -map 0:0 P3CT028.wav
+ffmpeg -i P3CT029.SFD -map 0:0 P3CT029.wav
+ffmpeg -i P3CT030_01.SFD -map 0:0 P3CT030_01.wav
+ffmpeg -i P3CT030_02.SFD -map 0:0 P3CT030_02.wav
+ffmpeg -i P3CTOP.SFD -map 0:0 P3CTOP.wav
+ffmpeg -i P3CTOP2.SFD -map 0:0 P3CTOP2.wav
+ffmpeg -i P3FCT001.SFD -map 0:0 P3FCT001.wav
+ffmpeg -i P3FCT002.SFD -map 0:0 P3FCT002.wav
+ffmpeg -i P3FCT003.SFD -map 0:0 P3FCT003.wav
+ffmpeg -i P3FCT004.SFD -map 0:0 P3FCT004.wav
+ffmpeg -i P3FCT005.SFD -map 0:0 P3FCT005.wav
+ffmpeg -i P3FCT006.SFD -map 0:0 P3FCT006.wav
+ffmpeg -i P3FCT007.SFD -map 0:0 P3FCT007.wav
+ffmpeg -i STAFF_ROLL_A.SFD -map 0:0 STAFF_ROLL_A.wav
+ffmpeg -i STAFF_ROLL_B.SFD -map 0:0 STAFF_ROLL_B.wav
+ffmpeg -i STAFF_ROLL_F.SFD -map 0:0 STAFF_ROLL_F.wav
+
+//convert back to mpeg1 and restore pixel size.
+ffmpeg -i GAME_START.mp4 -vf "setsar=200/219:max=219, scale=w=640:h=-1:sws_flags=spline+accurate_rnd+full_chroma_int+full_chroma_inp:sws_dither=0:in_range=1:out_range=1"" -b:v 2855K -maxrate 2855K -minrate 2855K GAME_START.m1v
+ffmpeg -i P3CT001_01.mp4 -vf "setsar=200/219:max=219, scale=w=640:h=-1:sws_flags=spline+accurate_rnd+full_chroma_int+full_chroma_inp:sws_dither=0:in_range=1:out_range=1"" -b:v 4920K -maxrate 4920K -minrate 4920K P3CT001_01.m1v
+ffmpeg -i P3CT001_02.mp4 -vf "setsar=200/219:max=219, scale=w=640:h=-1:sws_flags=spline+accurate_rnd+full_chroma_int+full_chroma_inp:sws_dither=0:in_range=1:out_range=1"" -b:v 4533K -maxrate 4533K -minrate 4533K P3CT001_02.m1v
+ffmpeg -i P3CT002.mp4 -vf "setsar=200/219:max=219, scale=w=640:h=-1:sws_flags=spline+accurate_rnd+full_chroma_int+full_chroma_inp:sws_dither=0:in_range=1:out_range=1"" -b:v 4762K -maxrate 4762K -minrate 4762K P3CT002.m1v
+ffmpeg -i P3CT002_00.mp4 -vf "setsar=200/219:max=219, scale=w=640:h=-1:sws_flags=spline+accurate_rnd+full_chroma_int+full_chroma_inp:sws_dither=0:in_range=1:out_range=1"" -b:v 4479K -maxrate 4479K -minrate 4479K P3CT002_00.m1v
+ffmpeg -i P3CT003.mp4 -vf "setsar=200/219:max=219, scale=w=640:h=-1:sws_flags=spline+accurate_rnd+full_chroma_int+full_chroma_inp:sws_dither=0:in_range=1:out_range=1"" -b:v 4856K -maxrate 4856K -minrate 4856K P3CT003.m1v
+ffmpeg -i P3CT004.mp4 -vf "setsar=200/219:max=219, scale=w=640:h=-1:sws_flags=spline+accurate_rnd+full_chroma_int+full_chroma_inp:sws_dither=0:in_range=1:out_range=1"" -b:v 4873K -maxrate 4873K -minrate 4873K P3CT004.m1v
+ffmpeg -i P3CT005.mp4 -vf "setsar=200/219:max=219, scale=w=640:h=-1:sws_flags=spline+accurate_rnd+full_chroma_int+full_chroma_inp:sws_dither=0:in_range=1:out_range=1"" -b:v 4818K -maxrate 4818K -minrate 4818K P3CT005.m1v
+ffmpeg -i P3CT006.mp4 -vf "setsar=200/219:max=219, scale=w=640:h=-1:sws_flags=spline+accurate_rnd+full_chroma_int+full_chroma_inp:sws_dither=0:in_range=1:out_range=1"" -b:v 4940K -maxrate 4940K -minrate 4940K P3CT006.m1v
+ffmpeg -i P3CT007.mp4 -vf "setsar=200/219:max=219, scale=w=640:h=-1:sws_flags=spline+accurate_rnd+full_chroma_int+full_chroma_inp:sws_dither=0:in_range=1:out_range=1"" -b:v 4948K -maxrate 4948K -minrate 4948K P3CT007.m1v
+ffmpeg -i P3CT008.mp4 -vf "setsar=200/219:max=219, scale=w=640:h=-1:sws_flags=spline+accurate_rnd+full_chroma_int+full_chroma_inp:sws_dither=0:in_range=1:out_range=1"" -b:v 4699K -maxrate 4699K -minrate 4699K P3CT008.m1v
+ffmpeg -i P3CT009.mp4 -vf "setsar=200/219:max=219, scale=w=640:h=-1:sws_flags=spline+accurate_rnd+full_chroma_int+full_chroma_inp:sws_dither=0:in_range=1:out_range=1"" -b:v 4933K -maxrate 4933K -minrate 4933K P3CT009.m1v
+ffmpeg -i P3CT010.mp4 -vf "setsar=200/219:max=219, scale=w=640:h=-1:sws_flags=spline+accurate_rnd+full_chroma_int+full_chroma_inp:sws_dither=0:in_range=1:out_range=1"" -b:v 4936K -maxrate 4936K -minrate 4936K P3CT010.m1v
+ffmpeg -i P3CT013.mp4 -vf "setsar=200/219:max=219, scale=w=640:h=-1:sws_flags=spline+accurate_rnd+full_chroma_int+full_chroma_inp:sws_dither=0:in_range=1:out_range=1"" -b:v 4635K -maxrate 4635K -minrate 4635K P3CT013.m1v
+ffmpeg -i P3CT015.mp4 -vf "setsar=200/219:max=219, scale=w=640:h=-1:sws_flags=spline+accurate_rnd+full_chroma_int+full_chroma_inp:sws_dither=0:in_range=1:out_range=1"" -b:v 5103K -maxrate 5103K -minrate 5103K P3CT015.m1v
+ffmpeg -i P3CT017.mp4 -vf "setsar=200/219:max=219, scale=w=640:h=-1:sws_flags=spline+accurate_rnd+full_chroma_int+full_chroma_inp:sws_dither=0:in_range=1:out_range=1"" -b:v 4510K -maxrate 4510K -minrate 4510K P3CT017.m1v
+ffmpeg -i P3CT019_01.mp4 -vf "setsar=200/219:max=219, scale=w=640:h=-1:sws_flags=spline+accurate_rnd+full_chroma_int+full_chroma_inp:sws_dither=0:in_range=1:out_range=1"" -b:v 4946K -maxrate 4946K -minrate 4946K P3CT019_01.m1v
+ffmpeg -i P3CT019_02.mp4 -vf "setsar=200/219:max=219, scale=w=640:h=-1:sws_flags=spline+accurate_rnd+full_chroma_int+full_chroma_inp:sws_dither=0:in_range=1:out_range=1"" -b:v 4920K -maxrate 4920K -minrate 4920K P3CT019_02.m1v
+ffmpeg -i P3CT021.mp4 -vf "setsar=200/219:max=219, scale=w=640:h=-1:sws_flags=spline+accurate_rnd+full_chroma_int+full_chroma_inp:sws_dither=0:in_range=1:out_range=1"" -b:v 4928K -maxrate 4928K -minrate 4928K P3CT021.m1v
+ffmpeg -i P3CT022_01.mp4 -vf "setsar=200/219:max=219, scale=w=640:h=-1:sws_flags=spline+accurate_rnd+full_chroma_int+full_chroma_inp:sws_dither=0:in_range=1:out_range=1"" -b:v 4499K -maxrate 4499K -minrate 4499K P3CT022_01.m1v
+ffmpeg -i P3CT022_02.mp4 -vf "setsar=200/219:max=219, scale=w=640:h=-1:sws_flags=spline+accurate_rnd+full_chroma_int+full_chroma_inp:sws_dither=0:in_range=1:out_range=1"" -b:v 4487K -maxrate 4487K -minrate 4487K P3CT022_02.m1v
+ffmpeg -i P3CT023.mp4 -vf "setsar=200/219:max=219, scale=w=640:h=-1:sws_flags=spline+accurate_rnd+full_chroma_int+full_chroma_inp:sws_dither=0:in_range=1:out_range=1"" -b:v 4907K -maxrate 4907K -minrate 4907K P3CT023.m1v
+ffmpeg -i P3CT026.mp4 -vf "setsar=200/219:max=219, scale=w=640:h=-1:sws_flags=spline+accurate_rnd+full_chroma_int+full_chroma_inp:sws_dither=0:in_range=1:out_range=1"" -b:v 4925K -maxrate 4925K -minrate 4925K P3CT026.m1v
+ffmpeg -i P3CT027_01.mp4 -vf "setsar=200/219:max=219, scale=w=640:h=-1:sws_flags=spline+accurate_rnd+full_chroma_int+full_chroma_inp:sws_dither=0:in_range=1:out_range=1"" -b:v 4759K -maxrate 4759K -minrate 4759K P3CT027_01.m1v
+ffmpeg -i P3CT027_02.mp4 -vf "setsar=200/219:max=219, scale=w=640:h=-1:sws_flags=spline+accurate_rnd+full_chroma_int+full_chroma_inp:sws_dither=0:in_range=1:out_range=1"" -b:v 4882K -maxrate 4882K -minrate 4882K P3CT027_02.m1v
+ffmpeg -i P3CT028.mp4 -vf "setsar=200/219:max=219, scale=w=640:h=-1:sws_flags=spline+accurate_rnd+full_chroma_int+full_chroma_inp:sws_dither=0:in_range=1:out_range=1"" -b:v 4929K -maxrate 4929K -minrate 4929K P3CT028.m1v
+ffmpeg -i P3CT029.mp4 -vf "setsar=200/219:max=219, scale=w=640:h=-1:sws_flags=spline+accurate_rnd+full_chroma_int+full_chroma_inp:sws_dither=0:in_range=1:out_range=1"" -b:v 4511K -maxrate 4511K -minrate 4511K P3CT029.m1v
+ffmpeg -i P3CT030_01.mp4 -vf "setsar=200/219:max=219, scale=w=640:h=-1:sws_flags=spline+accurate_rnd+full_chroma_int+full_chroma_inp:sws_dither=0:in_range=1:out_range=1"" -b:v 4858K -maxrate 4858K -minrate 4858K P3CT030_01.m1v
+ffmpeg -i P3CT030_02.mp4 -vf "setsar=200/219:max=219, scale=w=640:h=-1:sws_flags=spline+accurate_rnd+full_chroma_int+full_chroma_inp:sws_dither=0:in_range=1:out_range=1"" -b:v 4567K -maxrate 4567K -minrate 4567K P3CT030_02.m1v
+ffmpeg -i P3CTOP.mp4 -vf "setsar=200/219:max=219, scale=w=640:h=-1:sws_flags=spline+accurate_rnd+full_chroma_int+full_chroma_inp:sws_dither=0:in_range=1:out_range=1"" -b:v 4094K -maxrate 4094K -minrate 4094K P3CTOP.m1v
+ffmpeg -i P3CTOP2.mp4 -vf "setsar=200/219:max=219, scale=w=640:h=-1:sws_flags=spline+accurate_rnd+full_chroma_int+full_chroma_inp:sws_dither=0:in_range=1:out_range=1"" -b:v 4870K -maxrate 4870K -minrate 4870K P3CTOP2.m1v
+ffmpeg -i P3FCT001.mp4 -vf "setsar=200/219:max=219, scale=w=640:h=-1:sws_flags=spline+accurate_rnd+full_chroma_int+full_chroma_inp:sws_dither=0:in_range=1:out_range=1"" -b:v 4505K -maxrate 4505K -minrate 4505K P3FCT001.m1v
+ffmpeg -i P3FCT002.mp4 -vf "setsar=200/219:max=219, scale=w=640:h=-1:sws_flags=spline+accurate_rnd+full_chroma_int+full_chroma_inp:sws_dither=0:in_range=1:out_range=1"" -b:v 4321K -maxrate 4321K -minrate 4321K P3FCT002.m1v
+ffmpeg -i P3FCT003.mp4 -vf "setsar=200/219:max=219, scale=w=640:h=-1:sws_flags=spline+accurate_rnd+full_chroma_int+full_chroma_inp:sws_dither=0:in_range=1:out_range=1"" -b:v 4627K -maxrate 4627K -minrate 4627K P3FCT003.m1v
+ffmpeg -i P3FCT004.mp4 -vf "setsar=200/219:max=219, scale=w=640:h=-1:sws_flags=spline+accurate_rnd+full_chroma_int+full_chroma_inp:sws_dither=0:in_range=1:out_range=1"" -b:v 4341K -maxrate 4341K -minrate 4341K P3FCT004.m1v
+ffmpeg -i P3FCT005.mp4 -vf "setsar=200/219:max=219, scale=w=640:h=-1:sws_flags=spline+accurate_rnd+full_chroma_int+full_chroma_inp:sws_dither=0:in_range=1:out_range=1"" -b:v 4441K -maxrate 4441K -minrate 4441K P3FCT005.m1v
+ffmpeg -i P3FCT006.mp4 -vf "setsar=200/219:max=219, scale=w=640:h=-1:sws_flags=spline+accurate_rnd+full_chroma_int+full_chroma_inp:sws_dither=0:in_range=1:out_range=1"" -b:v 4515K -maxrate 4515K -minrate 4515K P3FCT006.m1v
+ffmpeg -i P3FCT007.mp4 -vf "setsar=200/219:max=219, scale=w=640:h=-1:sws_flags=spline+accurate_rnd+full_chroma_int+full_chroma_inp:sws_dither=0:in_range=1:out_range=1"" -b:v 1729K -maxrate 1729K -minrate 1729K P3FCT007.m1v
+ffmpeg -i STAFF_ROLL_A.mp4 -vf "setsar=200/219:max=219, scale=w=640:h=-1:sws_flags=spline+accurate_rnd+full_chroma_int+full_chroma_inp:sws_dither=0:in_range=1:out_range=1"" -b:v 4281K -maxrate 4281K -minrate 4281K STAFF_ROLL_A.m1v
+ffmpeg -i STAFF_ROLL_B.mp4 -vf "setsar=200/219:max=219, scale=w=640:h=-1:sws_flags=spline+accurate_rnd+full_chroma_int+full_chroma_inp:sws_dither=0:in_range=1:out_range=1"" -b:v 4271K -maxrate 4271K -minrate 4271K STAFF_ROLL_B.m1v
+ffmpeg -i STAFF_ROLL_F.mp4 -vf "setsar=200/219:max=219, scale=w=640:h=-1:sws_flags=spline+accurate_rnd+full_chroma_int+full_chroma_inp:sws_dither=0:in_range=1:out_range=1"" -b:v 4371K -maxrate 4371K -minrate 4371K STAFF_ROLL_F.m1v
+
+//downscale
+ffmpeg -i P3CT001_01.mp4 -b:v 11000K -vf "scale=w=640:h=-1:sws_flags=spline+accurate_rnd+full_chroma_int+full_chroma_inp:sws_dither=0:in_range=1:out_range=1" .\output\P3CT001_01.mp4
+
+-vf "ass=../SUBS/%%~nH.ass"
